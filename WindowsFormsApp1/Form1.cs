@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
             }
             if (speech == "Show Commands")
             {
-                string[] commands = (File.ReadAllLines(@"DefaultCommands.txt"));
+                string[] commands = File.ReadAllLines(@"DefaultCommands.txt");
                 LstCommands.Items.Clear();
                 LstCommands.SelectionMode = SelectionMode.None;
                 LstCommands.Visible = true;
